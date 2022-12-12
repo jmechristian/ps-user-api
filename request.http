@@ -1,0 +1,29 @@
+http://localhost:3005/users
+
+###
+
+http://localhost:3005/users/1
+
+###
+POST http://localhost:3005/users HTTP/1.1
+content-type: application/json
+
+{
+    "username": "thridUser",
+    "bio": "I am the third user",
+    "email": "thirduser@email.com"
+}
+
+###
+PUT http://localhost:3005/users/1 HTTP/1.1
+content-type: application/json
+
+{
+    "username": "thridUser_edited",
+    "bio": "I am the third user",
+    "email": "thirduser@email.com"
+}
+
+###
+DELETE http://localhost:3005/users/3 HTTP/1.1
+coontent-type: application/json
