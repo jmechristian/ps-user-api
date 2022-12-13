@@ -10,7 +10,7 @@ pool
     password: 'Love093010!',
   })
   .then(() => {
-    app().listen(3005, () => {
+    app().listen(process.env.PORT, () => {
       console.log('Listening on port 3005');
     });
   })
